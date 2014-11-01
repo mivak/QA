@@ -1,0 +1,32 @@
+C:\Users\Misho\Desktop\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\Users\Misho\Desktop\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\Users\Misho\Desktop\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+C:\Users\Misho\Desktop\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.csprojResolveAssemblyReference.cache
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+E:\Telerik Academy\QA\TeamworkTeamFig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+E:\Telerik Academy\QA\TeamworkTeamFig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+E:\Telerik Academy\QA\TeamworkTeamFig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+E:\Telerik Academy\QA\TeamworkTeamFig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+E:\Telerik Academy\QA\TeamworkTeamFig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.csprojResolveAssemblyReference.cache
+C:\RABOTA\TELERIK\QA\TFSFigRepo\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\RABOTA\TELERIK\QA\TFSFigRepo\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\RABOTA\TELERIK\QA\TFSFigRepo\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.csprojResolveAssemblyReference.cache
+C:\RABOTA\TELERIK\QA\TFSFigRepo\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+C:\RABOTA\TELERIK\QA\TFSFigRepo\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TestingFramework.Core\obj\Debug\QA.TestingFramework.Core.pdb

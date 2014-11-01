@@ -1,0 +1,454 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>TelerikAcademyLearningSystem</RootNamespace>
+    <AssemblyName>TelerikAcademyLearningSystem</AssemblyName>
+    <OutputPath>bin</OutputPath>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2014.3.903.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Calendars\Calendar\Admin\AssertCalendarPageTitle.tstest" />
+    <None Include="Calendars\Calendar\Admin\SharedTests\GoToCalendarModule.tstest" />
+    <None Include="Calendars\Calendar\Admin\ValidateBackToAdministrationLinkOnCalendar.tstest" />
+    <None Include="Calendars\Events\Admin\AddEventToAllCourses.tstest" />
+    <None Include="Calendars\Events\Admin\AddEventToExistingUser.tstest" />
+    <None Include="Calendars\Events\Admin\AddEventToSpecificClassroom.tstest" />
+    <None Include="Calendars\Events\Admin\AddEventToSpecificCourse.tstest" />
+    <None Include="Calendars\Events\Admin\RemoveEventFromTheGrid.tstest" />
+    <None Include="Calendars\Events\Admin\Shared Steps\GoToEventsModule.tstest" />
+    <None Include="Calendars\Events\Admin\TryingAddEventToNonExistingUser.tstest" />
+    <None Include="Calendars\Events\Admin\TryingAddEventWithInvalidEndDate.tstest" />
+    <None Include="Calendars\Events\Admin\TryingAddEventWithInvalidStartDate.tstest" />
+    <None Include="Calendars\Events\Admin\TryingAddEventWithoutDescription.tstest" />
+    <None Include="Calendars\Events\Admin\VerifyEventModuleNavigation.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureForSpecificCourse.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureToAnotherClassroom.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureWithInvalidEndDate.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureWithInvalidStartDate.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\PostponeLectureForSpecificCourse.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\Shared Steps\GoToMovedLecturesModule.tstest" />
+    <None Include="Calendars\Moved Lectures\Admin\VerifyMovedLecturesModuleNavigation.tstest" />
+    <None Include="Calendars\Official Holidays\Admin\AssertOfficialHolidaysPageTitle.tstest" />
+    <None Include="Calendars\Official Holidays\Admin\Shared Steps\GoToOfficialHolidaysModule.tstest" />
+    <None Include="Calendars\Official Holidays\Admin\ValidateBackToAdministrationLinkOnHolidays.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestBeginningDateInThePast.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestBeginningDateNaN.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestBgCoderIdNaN.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestEmptyBgCoderId.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestEmptyName.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestEndingDateBeforeBeginningDate.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestEndingDateNaN.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateBeforeEndingDate.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateInThePast.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateNaN.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestNegativeBgCoderId.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestNoBeginningDate.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestNoEndingDate.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestNoLastActiveDate.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewContestTooBigBgCoderId.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewOfficialContest.tstest" />
+    <None Include="Kids Academy\Contests\CreateNewUnofficialContest.tstest" />
+    <None Include="Kids Academy\Contests\EraseContestJustAfterCreation.tstest" />
+    <None Include="Kids Academy\Contests\SharedSteps\GoToContestsModule.tstest" />
+    <None Include="Kids Academy\Contests\SharedSteps\OpenCreateNewContestForm.tstest" />
+    <None Include="Kids Academy\Documents\Shared Steps\GoToDocumentsModule.tstest" />
+    <None Include="Kids Academy\Documents\VerifyBackToAdministrationButtonWorksCorrectly.tstest" />
+    <None Include="Kids Academy\Documents\VerifyDownloadAllButtonOpensAWindowToDownloadAllDocuments.tstest" />
+    <None Include="Kids Academy\Documents\VerifyValidationOfAddFileForm.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolAllData.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolGrouPIdInsteadOfName.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolGrouPInvalidGroupId.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoEmail.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoGroupName.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoUsername.tstest" />
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolOnlyRequiredData.tstest" />
+    <None Include="Kids Academy\Kids in Schools\Shared Steps\GoToKidsInSchoolsModule.tstest" />
+    <None Include="Kids Academy\Kids in Schools\Shared Steps\OpenRegisterExistingUserToSchoolForm.tstest" />
+    <None Include="Kids Academy\Registration Form\LeavingAllFieldsBlank.tstest" />
+    <None Include="Kids Academy\Registration Form\Shared Steps\NavigateToKidsAcademyRegistrationForm.tstest" />
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidDateOfBirth.tstest" />
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidEmail.tstest" />
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidPhoneNumber.tstest" />
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithNotMatchingPasswords.tstest" />
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithoutAgreeingTerms.tstest" />
+    <None Include="Kids Academy\School Types\Shared Steps\GoToSchoolTypeModule.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCancellingChangesCancelsChanges.tstest" />
+    <None Include="Kids Academy\School Types\VerifyChangedIdIsSavedCorrectly.tstest" />
+    <None Include="Kids Academy\School Types\VerifyChangedNameIsSavedCorrectly.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatingNewSchoolTypeWithNegativeIdMessageIsDisplayedThatTheIdIsNotValid.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithDuplicateIdDisplaysMessageThatThereIsSchoolTypeWithThisId.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithEmptyIdDisplaysCorrectMessage.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithEmptyNameDisplaysCorrectMessage.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithSpecificIdCreatesSchoolTypeWithTheSameId.tstest" />
+    <None Include="Kids Academy\School Types\VerifyCreatinSchoolTypeWithIdThatIsNotNumberDisplaysCorrectMessage.tstest" />
+    <None Include="Kids Academy\School Types\VerifyDuplicateNamesAreNotAllowed.tstest" />
+    <None Include="Kids Academy\School Types\VerifyTheButtonBackToAdministrationWorks.tstest" />
+    <None Include="Kids Academy\School Types\VerifyThereAreUpTo25SchoolTypesPerTypes.tstest" />
+    <None Include="Kids Academy\Schools\Shared Steps\GoToSchoolsModule.tstest" />
+    <None Include="Kids Academy\Schools\VerifyBackToAdministrationButtonWorks.tstest" />
+    <None Include="Kids Academy\Schools\VerifyTheLinkToTheCourseInstanceWorksCorrectly.tstest" />
+    <None Include="Settings.aiis" />
+    <None Include="Shared Steps\LoginAsAdmin.tstest" />
+    <None Include="Shared Steps\LoginAsKidsAdmin.tstest" />
+    <Compile Include="Calendars\Calendar\Admin\AssertCalendarPageTitle.tstest.cs">
+      <DependentUpon>AssertCalendarPageTitle.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Calendars\Calendar\Admin\ValidateBackToAdministrationLinkOnCalendar.tstest.cs">
+      <DependentUpon>ValidateBackToAdministrationLinkOnCalendar.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Calendars\Events\Admin\AddEventToAllCourses.tstest.cs">
+      <DependentUpon>AddEventToAllCourses.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Calendars\Events\Admin\RemoveEventFromTheGrid.tstest.cs">
+      <DependentUpon>RemoveEventFromTheGrid.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Calendars\Official Holidays\Admin\AssertOfficialHolidaysPageTitle.tstest.cs">
+      <DependentUpon>AssertOfficialHolidaysPageTitle.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Calendars\Official Holidays\Admin\ValidateBackToAdministrationLinkOnHolidays.tstest.cs">
+      <DependentUpon>ValidateBackToAdministrationLinkOnHolidays.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestBeginningDateInThePast.tstest.cs">
+      <DependentUpon>CreateNewContestBeginningDateInThePast.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestBeginningDateNaN.tstest.cs">
+      <DependentUpon>CreateNewContestBeginningDateNaN.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestBgCoderIdNaN.tstest.cs">
+      <DependentUpon>CreateNewContestBgCoderIdNaN.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestEmptyBgCoderId.tstest.cs">
+      <DependentUpon>CreateNewContestEmptyBgCoderId.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestEmptyName.tstest.cs">
+      <DependentUpon>CreateNewContestEmptyName.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestEndingDateBeforeBeginningDate.tstest.cs">
+      <DependentUpon>CreateNewContestEndingDateBeforeBeginningDate.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestEndingDateNaN.tstest.cs">
+      <DependentUpon>CreateNewContestEndingDateNaN.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestLastActiveDateBeforeEndingDate.tstest.cs">
+      <DependentUpon>CreateNewContestLastActiveDateBeforeEndingDate.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestLastActiveDateInThePast.tstest.cs">
+      <DependentUpon>CreateNewContestLastActiveDateInThePast.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestLastActiveDateNaN.tstest.cs">
+      <DependentUpon>CreateNewContestLastActiveDateNaN.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestNegativeBgCoderId.tstest.cs">
+      <DependentUpon>CreateNewContestNegativeBgCoderId.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestNoBeginningDate.tstest.cs">
+      <DependentUpon>CreateNewContestNoBeginningDate.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestNoEndingDate.tstest.cs">
+      <DependentUpon>CreateNewContestNoEndingDate.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestNoLastActiveDate.tstest.cs">
+      <DependentUpon>CreateNewContestNoLastActiveDate.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewContestTooBigBgCoderId.tstest.cs">
+      <DependentUpon>CreateNewContestTooBigBgCoderId.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewOfficialContest.tstest.cs">
+      <DependentUpon>CreateNewOfficialContest.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\CreateNewUnofficialContest.tstest.cs">
+      <DependentUpon>CreateNewUnofficialContest.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Contests\EraseContestJustAfterCreation.tstest.cs">
+      <DependentUpon>EraseContestJustAfterCreation.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Documents\Shared Steps\GoToDocumentsModule.tstest.cs">
+      <DependentUpon>GoToDocumentsModule.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Documents\VerifyValidationOfAddFileForm.tstest.cs">
+      <DependentUpon>VerifyValidationOfAddFileForm.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Kids Academy\Schools\VerifyTheLinkToTheCourseInstanceWorksCorrectly.tstest.cs">
+      <DependentUpon>VerifyTheLinkToTheCourseInstanceWorksCorrectly.tstest</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Calendars\Calendar\Admin\AssertCalendarPageTitle.resx">
+      <DependentUpon>AssertCalendarPageTitle.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Calendar\Admin\SharedTests\GoToCalendarModule.resx">
+      <DependentUpon>GoToCalendarModule.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Calendar\Admin\ValidateBackToAdministrationLinkOnCalendar.resx">
+      <DependentUpon>ValidateBackToAdministrationLinkOnCalendar.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\AddEventToAllCourses.resx">
+      <DependentUpon>AddEventToAllCourses.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\AddEventToExistingUser.resx">
+      <DependentUpon>AddEventToExistingUser.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\AddEventToSpecificClassroom.resx">
+      <DependentUpon>AddEventToSpecificClassroom.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\AddEventToSpecificCourse.resx">
+      <DependentUpon>AddEventToSpecificCourse.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\RemoveEventFromTheGrid.resx">
+      <DependentUpon>RemoveEventFromTheGrid.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\Shared Steps\GoToEventsModule.resx">
+      <DependentUpon>GoToEventsModule.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\TryingAddEventToNonExistingUser.resx">
+      <DependentUpon>TryingAddEventToNonExistingUser.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\TryingAddEventWithInvalidEndDate.resx">
+      <DependentUpon>TryingAddEventWithInvalidEndDate.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\TryingAddEventWithInvalidStartDate.resx">
+      <DependentUpon>TryingAddEventWithInvalidStartDate.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\TryingAddEventWithoutDescription.resx">
+      <DependentUpon>TryingAddEventWithoutDescription.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Events\Admin\VerifyEventModuleNavigation.resx">
+      <DependentUpon>VerifyEventModuleNavigation.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureForSpecificCourse.resx">
+      <DependentUpon>MoveLectureForSpecificCourse.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureToAnotherClassroom.resx">
+      <DependentUpon>MoveLectureToAnotherClassroom.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureWithInvalidEndDate.resx">
+      <DependentUpon>MoveLectureWithInvalidEndDate.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\MoveLectureWithInvalidStartDate.resx">
+      <DependentUpon>MoveLectureWithInvalidStartDate.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\PostponeLectureForSpecificCourse.resx">
+      <DependentUpon>PostponeLectureForSpecificCourse.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\Shared Steps\GoToMovedLecturesModule.resx">
+      <DependentUpon>GoToMovedLecturesModule.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Moved Lectures\Admin\VerifyMovedLecturesModuleNavigation.resx">
+      <DependentUpon>VerifyMovedLecturesModuleNavigation.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Official Holidays\Admin\AssertOfficialHolidaysPageTitle.resx">
+      <DependentUpon>AssertOfficialHolidaysPageTitle.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Official Holidays\Admin\Shared Steps\GoToOfficialHolidaysModule.resx">
+      <DependentUpon>GoToOfficialHolidaysModule.tstest</DependentUpon>
+    </None>
+    <None Include="Calendars\Official Holidays\Admin\ValidateBackToAdministrationLinkOnHolidays.resx">
+      <DependentUpon>ValidateBackToAdministrationLinkOnHolidays.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestBeginningDateInThePast.resx">
+      <DependentUpon>CreateNewContestBeginningDateInThePast.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestBeginningDateNaN.resx">
+      <DependentUpon>CreateNewContestBeginningDateNaN.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestBgCoderIdNaN.resx">
+      <DependentUpon>CreateNewContestBgCoderIdNaN.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestEmptyBgCoderId.resx">
+      <DependentUpon>CreateNewContestEmptyBgCoderId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestEmptyName.resx">
+      <DependentUpon>CreateNewContestEmptyName.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestEndingDateBeforeBeginningDate.resx">
+      <DependentUpon>CreateNewContestEndingDateBeforeBeginningDate.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestEndingDateNaN.resx">
+      <DependentUpon>CreateNewContestEndingDateNaN.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateBeforeEndingDate.resx">
+      <DependentUpon>CreateNewContestLastActiveDateBeforeEndingDate.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateInThePast.resx">
+      <DependentUpon>CreateNewContestLastActiveDateInThePast.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestLastActiveDateNaN.resx">
+      <DependentUpon>CreateNewContestLastActiveDateNaN.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestNegativeBgCoderId.resx">
+      <DependentUpon>CreateNewContestNegativeBgCoderId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestNoBeginningDate.resx">
+      <DependentUpon>CreateNewContestNoBeginningDate.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestNoEndingDate.resx">
+      <DependentUpon>CreateNewContestNoEndingDate.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestNoLastActiveDate.resx">
+      <DependentUpon>CreateNewContestNoLastActiveDate.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewContestTooBigBgCoderId.resx">
+      <DependentUpon>CreateNewContestTooBigBgCoderId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewOfficialContest.resx">
+      <DependentUpon>CreateNewOfficialContest.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\CreateNewUnofficialContest.resx">
+      <DependentUpon>CreateNewUnofficialContest.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\EraseContestJustAfterCreation.resx">
+      <DependentUpon>EraseContestJustAfterCreation.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\SharedSteps\GoToContestsModule.resx">
+      <DependentUpon>GoToContestsModule.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Contests\SharedSteps\OpenCreateNewContestForm.resx">
+      <DependentUpon>OpenCreateNewContestForm.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Documents\Shared Steps\GoToDocumentsModule.resx">
+      <DependentUpon>GoToDocumentsModule.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Documents\VerifyBackToAdministrationButtonWorksCorrectly.resx">
+      <DependentUpon>VerifyBackToAdministrationButtonWorksCorrectly.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Documents\VerifyDownloadAllButtonOpensAWindowToDownloadAllDocuments.resx">
+      <DependentUpon>VerifyDownloadAllButtonOpensAWindowToDownloadAllDocuments.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Documents\VerifyValidationOfAddFileForm.resx">
+      <DependentUpon>VerifyValidationOfAddFileForm.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolAllData.resx">
+      <DependentUpon>RegisterExistingUserToSchoolAllData.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolGrouPIdInsteadOfName.resx">
+      <DependentUpon>RegisterExistingUserToSchoolGrouPIdInsteadOfName.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolGrouPInvalidGroupId.resx">
+      <DependentUpon>RegisterExistingUserToSchoolGrouPInvalidGroupId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoEmail.resx">
+      <DependentUpon>RegisterExistingUserToSchoolNoEmail.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoGroupName.resx">
+      <DependentUpon>RegisterExistingUserToSchoolNoGroupName.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolNoUsername.resx">
+      <DependentUpon>RegisterExistingUserToSchoolNoUsername.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\RegisterExistingUserToSchoolOnlyRequiredData.resx">
+      <DependentUpon>RegisterExistingUserToSchoolOnlyRequiredData.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\Shared Steps\GoToKidsInSchoolsModule.resx">
+      <DependentUpon>GoToKidsInSchoolsModule.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Kids in Schools\Shared Steps\OpenRegisterExistingUserToSchoolForm.resx">
+      <DependentUpon>OpenRegisterExistingUserToSchoolForm.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\LeavingAllFieldsBlank.resx">
+      <DependentUpon>LeavingAllFieldsBlank.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\Shared Steps\NavigateToKidsAcademyRegistrationForm.resx">
+      <DependentUpon>NavigateToKidsAcademyRegistrationForm.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidDateOfBirth.resx">
+      <DependentUpon>TryingRegisterUserWithInvalidDateOfBirth.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidEmail.resx">
+      <DependentUpon>TryingRegisterUserWithInvalidEmail.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithInvalidPhoneNumber.resx">
+      <DependentUpon>TryingRegisterUserWithInvalidPhoneNumber.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithNotMatchingPasswords.resx">
+      <DependentUpon>TryingRegisterUserWithNotMatchingPasswords.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Registration Form\TryingRegisterUserWithoutAgreeingTerms.resx">
+      <DependentUpon>TryingRegisterUserWithoutAgreeingTerms.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\Shared Steps\GoToSchoolTypeModule.resx">
+      <DependentUpon>GoToSchoolTypeModule.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCancellingChangesCancelsChanges.resx">
+      <DependentUpon>VerifyCancellingChangesCancelsChanges.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyChangedIdIsSavedCorrectly.resx">
+      <DependentUpon>VerifyChangedIdIsSavedCorrectly.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyChangedNameIsSavedCorrectly.resx">
+      <DependentUpon>VerifyChangedNameIsSavedCorrectly.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatingNewSchoolTypeWithNegativeIdMessageIsDisplayedThatTheIdIsNotValid.resx">
+      <DependentUpon>VerifyCreatingNewSchoolTypeWithNegativeIdMessageIsDisplayedThatTheIdIsNotValid.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithDuplicateIdDisplaysMessageThatThereIsSchoolTypeWithThisId.resx">
+      <DependentUpon>VerifyCreatingSchoolTypeWithDuplicateIdDisplaysMessageThatThereIsSchoolTypeWithThisId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithEmptyIdDisplaysCorrectMessage.resx">
+      <DependentUpon>VerifyCreatingSchoolTypeWithEmptyIdDisplaysCorrectMessage.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithEmptyNameDisplaysCorrectMessage.resx">
+      <DependentUpon>VerifyCreatingSchoolTypeWithEmptyNameDisplaysCorrectMessage.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatingSchoolTypeWithSpecificIdCreatesSchoolTypeWithTheSameId.resx">
+      <DependentUpon>VerifyCreatingSchoolTypeWithSpecificIdCreatesSchoolTypeWithTheSameId.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyCreatinSchoolTypeWithIdThatIsNotNumberDisplaysCorrectMessage.resx">
+      <DependentUpon>VerifyCreatinSchoolTypeWithIdThatIsNotNumberDisplaysCorrectMessage.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyDuplicateNamesAreNotAllowed.resx">
+      <DependentUpon>VerifyDuplicateNamesAreNotAllowed.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyTheButtonBackToAdministrationWorks.resx">
+      <DependentUpon>VerifyTheButtonBackToAdministrationWorks.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\School Types\VerifyThereAreUpTo25SchoolTypesPerTypes.resx">
+      <DependentUpon>VerifyThereAreUpTo25SchoolTypesPerTypes.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Schools\Shared Steps\GoToSchoolsModule.resx">
+      <DependentUpon>GoToSchoolsModule.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Schools\VerifyBackToAdministrationButtonWorks.resx">
+      <DependentUpon>VerifyBackToAdministrationButtonWorks.tstest</DependentUpon>
+    </None>
+    <None Include="Kids Academy\Schools\VerifyTheLinkToTheCourseInstanceWorksCorrectly.resx">
+      <DependentUpon>VerifyTheLinkToTheCourseInstanceWorksCorrectly.tstest</DependentUpon>
+    </None>
+    <None Include="Shared Steps\LoginAsAdmin.resx">
+      <DependentUpon>LoginAsAdmin.tstest</DependentUpon>
+    </None>
+    <None Include="Shared Steps\LoginAsKidsAdmin.resx">
+      <DependentUpon>LoginAsKidsAdmin.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="TelerikAcademyLearningSystem.TestStudio" Version="2014.3.820.0" VsProjectLanguage="CSharp" xmlns="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Condition="true" Project="$(MSBuildExtensionsPath)\Telerik\WebUITestStudio\Telerik.WebUITestStudio.targets" />
+</Project>

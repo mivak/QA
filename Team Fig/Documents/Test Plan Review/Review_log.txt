@@ -1,0 +1,17 @@
+Document Title: Review log of team's "Fig" test plan
+Reviewer: Team "Cloudberry"
+Date:21.10.2014
+
+* Redundant and inapplicable processes in the Test Process Workflow (i.e. 3.1 Setup test environment,
+  3.3 Develop test stubs and drivers, 3.4 Identify Test-Specific functionality in the design and implementation model, 
+  3.5 Establish External Data sets
+* Missing information about what metrics and reports will be delivered, how often etc.
+* Add estimated time to finish each task
+* Font inconsistency (i.e. in the table of content there is both Calibri and Times New Roman)
+* Don't use abbreviations in the document such as "cont". Write the whole word.
+* Telerik Academy Learning System should be TILS
+* The author of the document revision (in Revision History) should be specified as a person (when possible) 
+* System build is better to be deleted
+* The test cases priority is good to be presented in table, like Defect Severity Classification,
+  with explanation of the values 1-4 
+* Glossary for the abbreviations (UAT, etc.)
