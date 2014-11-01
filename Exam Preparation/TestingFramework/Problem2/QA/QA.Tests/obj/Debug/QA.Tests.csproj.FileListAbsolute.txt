@@ -1,0 +1,9 @@
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.Tests.dll
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.Tests.pdb
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.Core.dll
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.TestingFramework.dll
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.Core.pdb
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\bin\Debug\QA.TestingFramework.pdb
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\obj\Debug\QA.Tests.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\obj\Debug\QA.Tests.dll
+C:\TelerikAcademy\QA\QA Part2\18.Exam Preparation\TestingFramework\Problem2\QA\QA.Tests\obj\Debug\QA.Tests.pdb
