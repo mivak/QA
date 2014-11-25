@@ -4,14 +4,12 @@
     
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.Win32.Dialogs;
+    using QA.TelerikAcademy.Core.Pages.Base;
 
     public class SchoolTypesPage : BasePage
     {
-        private const string SchoolTypesPageUrl = 
-            "http://test.telerikacademy.com/KidsAcademy/AdministrationKidsSchoolsTypes";
-
         public SchoolTypesPage()
-            : base(SchoolTypesPageUrl)
+            : base("http://test.telerikacademy.com/KidsAcademy/AdministrationKidsSchoolsTypes")
         {
         }
 
@@ -29,11 +27,6 @@
             {
                 return new SchoolTypesPageValidator();
             }
-        }
-
-        public void GoToSchoolTypesModule()
-        {
-            this.Navigate();
         }
 
         public void CreateSchoolType(string id, string name)
@@ -72,6 +65,7 @@
 
         public void DeleteSecondRow()
         {
+            Manager.Current.ActiveBrowser.WaitForElement(5000, "xpath=//*[@id='DataGrid']/table");
             AlertDialog alert = AlertDialog.CreateAlertDialog(
                 Manager.Current.ActiveBrowser, DialogButton.OK);
             Manager.Current.DialogMonitor.AddDialog(alert);

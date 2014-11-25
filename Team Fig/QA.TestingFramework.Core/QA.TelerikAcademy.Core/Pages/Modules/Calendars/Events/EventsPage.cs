@@ -2,14 +2,13 @@
 {
     using ArtOfTest.WebAii.Core;
     using ArtOfTest.WebAii.Win32.Dialogs;
+    using QA.TelerikAcademy.Core.Pages.Base;
     using System;
 
     public class EventsPage : BasePage
     {
-        private const string EventsPageUrl = "http://test.telerikacademy.com/Administration_Calendar/CustomEvents";
-
         public EventsPage()
-            : base(EventsPageUrl)
+            : base("http://test.telerikacademy.com/Administration_Calendar/CustomEvents")
         {
         }
 
@@ -28,12 +27,7 @@
                 return new EventsPageValidator();
             }
         }
-
-        public void GoToEventsModule()
-        {
-            this.Navigate();
-        }
-
+        
         public void CreateEventToAllCourses()
         {
             this.Map.CreateEventButton.Click();
@@ -82,12 +76,17 @@
             this.Map.CreateEventButton.Click();
             this.Map.EventDescription.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText("Some test description", 5);
+
             this.Map.StartDate.MouseClick();
             this.Map.StartDate.Text = String.Empty;
             Manager.Current.Desktop.KeyBoard.TypeText("27/10/2015 22:30:00", 5);
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
             this.Map.EndDate.MouseClick();
             this.Map.EndDate.Text = String.Empty;
             Manager.Current.Desktop.KeyBoard.TypeText("27/12/2015 22:30:00", 5);
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
             this.Map.UpdateButton.Click();
         }
 
@@ -96,12 +95,17 @@
             this.Map.CreateEventButton.Click();
             this.Map.EventDescription.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText("Some test description", 5);
+
             this.Map.StartDate.MouseClick();
             this.Map.StartDate.Text = String.Empty;
             Manager.Current.Desktop.KeyBoard.TypeText("27/12/2015 22:30:00", 5);
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
             this.Map.EndDate.MouseClick();
             this.Map.EndDate.Text = String.Empty;
             Manager.Current.Desktop.KeyBoard.TypeText("27/10/2015 22:30:00", 5);
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
             this.Map.UpdateButton.Click();
         }
 
@@ -146,7 +150,7 @@
             Manager.Current.DialogMonitor.Start();
 
             Manager.Current.ActiveBrowser.Refresh();
-            Manager.Current.ActiveBrowser.WaitForAjax(6000);
+            Manager.Current.ActiveBrowser.WaitForAjax(3000);
             this.Map.DeleteButton.Click();
   
             alert.WaitUntilHandled();

@@ -1,14 +1,15 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.OfficialHolidays
 {
+    using QA.TelerikAcademy.Core.Pages.Base;
+    
     public class OfficialHolidaysPage : BasePage
     {
-        private const string OfficialHolidaysPageUrl = "http://test.telerikacademy.com/Administration_Calendar/Holidays";
         public OfficialHolidaysPage()
-            : base(OfficialHolidaysPageUrl)
+            : base("http://test.telerikacademy.com/Administration_Calendar/Holidays")
         {
         }
 
-        public OfficialHolidaysPageMap Map 
+        public OfficialHolidaysPageMap PageMap 
         { 
             get
             {

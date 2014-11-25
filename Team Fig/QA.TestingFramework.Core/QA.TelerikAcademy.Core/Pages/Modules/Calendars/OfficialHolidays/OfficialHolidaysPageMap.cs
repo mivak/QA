@@ -8,8 +8,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>(
-                    "href=http://test.telerikacademy.com/Administration_Calendar/Holidays/HolidaysRead?DataGrid-mode=insert");
+                return this.Find.ByContent<HtmlAnchor>("Създай празник");
             }
         }
 
@@ -25,7 +24,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>("href=http://test.telerikacademy.com/Administration/Navigation");
+                return this.Find.ByContent<HtmlAnchor>("Обратно към администрацията");
             }
         }
 
@@ -33,7 +32,16 @@
         {
             get
             {
-                return this.Find.ByAttributes<HtmlTable>("role=grid");
+                return this.Find.ByXPath<HtmlTable>("//*[@id='DataGrid']/table");
+            }
+        }
+
+        public HtmlContainerControl AdminPageHeader
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlContainerControl>(
+                    "//*[@id='MainContent']/h1");
             }
         }
     }

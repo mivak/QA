@@ -1,9 +1,7 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.ContestCreation
+﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms.ContestCreationForm
 {
-    using ArtOfTest.WebAii.Core;
-    using System.Threading;
-    using System.Drawing;
     using System;
+    using ArtOfTest.WebAii.Core;
 
     public class ContestCreationForm
     {
@@ -29,9 +27,10 @@
 
         public void CreateSampleContest(string contestName)
         {
-            var contest= new{
-                BgCoderId="20",
-                Name=contestName,
+            var contest = new
+            {
+                BgCoderId = "20",
+                Name = contestName,
                 StartTime = "28/11/2014 10:00:00",
                 EndTime = "28/11/2014 18:00:00",
                 ActiveTo = "28/12/2014 10:00:00"
@@ -44,7 +43,7 @@
 
             this.Map.ContestName.MouseClick();
             this.Map.ContestName.Focus();
-            Manager.Current.Desktop.KeyBoard.TypeText(contest.Name,5);
+            Manager.Current.Desktop.KeyBoard.TypeText(contest.Name, 5);
 
             this.Map.StartTime.Text = contest.StartTime;
             this.Map.StartTime.Focus();

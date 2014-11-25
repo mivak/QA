@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Documents
+﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Documents
 {
+    using ArtOfTest.WebAii.Core;
+    using QA.TelerikAcademy.Core.Pages.Base;
+
     public class DocumentsPage : BasePage
     {
-        private const string DocumentsPageUrl = "http://test.telerikacademy.com/KidsAcademy/AdministrationKidsSchoolsDocuments";
-
         public DocumentsPage()
-            : base(DocumentsPageUrl)
+            : base("http://test.telerikacademy.com/KidsAcademy/AdministrationKidsSchoolsDocuments")
         {
         }
 
@@ -29,6 +24,11 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Documents
             {
                 return new DocumentsPageValidator();
             }
+        }
+
+        public void AddFileWithEmptyName()
+        {
+            //TODO: AddFileWIthEmptyName
         }
     }
 }

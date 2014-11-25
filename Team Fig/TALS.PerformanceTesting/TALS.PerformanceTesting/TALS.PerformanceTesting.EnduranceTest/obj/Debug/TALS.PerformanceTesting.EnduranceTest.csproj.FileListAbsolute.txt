@@ -1,0 +1,6 @@
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\bin\Debug\TALS.PerformanceTesting.EnduranceTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\bin\Debug\TALS.PerformanceTesting.EnduranceTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\obj\Debug\TALS.PerformanceTesting.EnduranceTest.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\obj\Debug\TALS.PerformanceTesting.EnduranceTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\obj\Debug\TALS.PerformanceTesting.EnduranceTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.EnduranceTest\bin\Debug\Register150VUFor2Hours.loadtest

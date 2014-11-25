@@ -5,6 +5,12 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.SchoolTypes
 {
     public class SchoolTypesPageValidator
     {
+        private readonly int pagingCount = 25;
+        private readonly string pageHeader = "Администрация на детската академия на Телерик";
+        private readonly string nameRequiredMessage = "The Name field is required.";
+        private readonly string idRequiredMessage = "The KidsSchoolTypeId field is required.";
+        private readonly string idInvalidMessage = "The KidsSchoolTypeId is invalid.";
+
         public SchoolTypesPageMap PageMap
         {
             get
@@ -15,15 +21,14 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.SchoolTypes
 
         public void AdminPageHeader()
         {
-            Assert.AreEqual(
-                "Администрация на детската академия на Телерик", 
+            Assert.AreEqual(pageHeader, 
                 this.PageMap.AdminPageHeader.InnerText);
         }
 
         public void RowsCountPerPage()
         {
             var rows = this.PageMap.Grid.Rows.Count;
-            Assert.IsTrue(rows == 25);
+            Assert.IsTrue(rows == pagingCount);
         }
 
         public void SortByColumnHeaderId()
@@ -96,24 +101,28 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.SchoolTypes
             Assert.AreEqual(id, idCell.TextContent);
         }
 
-        public void IdFieldIsRequired(string id, string name)
+        public void NameFieldIsRequired()
         {
-            Assert.AreEqual(
-                "The KidsSchoolTypeId field is required.", 
+            string validationMessage = nameRequiredMessage;
+            Assert.IsTrue(this.PageMap.CreateWindowDivContainer
+                .InnerText.Contains(validationMessage));
+        }
+
+        public void IdFieldIsRequired()
+        {
+            Assert.AreEqual(idRequiredMessage,
                 this.PageMap.IdValidationMessage.InnerText);
             Assert.IsTrue(this.PageMap.IdValidationMessage.IsVisible());
         }
 
         public void SchoolTypeIsNotCreated()
         {
-            Assert.IsTrue(this.PageMap.UpdateButton.IsVisible(), 
-            "The school type is created");
+            Assert.IsTrue(this.PageMap.UpdateButton.IsVisible());
         }
 
         public void IdIsInvalid()
         {
-            Assert.AreEqual(
-                "The KidsSchoolTypeId is invalid.",
+            Assert.AreEqual(idInvalidMessage,
                 this.PageMap.IdValidationMessage.InnerText);
             Assert.IsTrue(this.PageMap.IdValidationMessage.IsVisible());
         }

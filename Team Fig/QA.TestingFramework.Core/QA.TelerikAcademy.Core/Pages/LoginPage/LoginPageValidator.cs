@@ -1,8 +1,9 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.LoginPage
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using QA.TelerikAcademy.Core.Base;
     using QA.TelerikAcademy.Core.Data;
+    using QA.TelerikAcademy.Core.Data.Users;
+    using QA.TelerikAcademy.Core.Pages.Navigation;
 
     public class LoginPageValidator
     {
@@ -14,7 +15,7 @@
             }
         }
 
-        public void UserLabel(User user)
+        public void UserLabel(IUser user)
         {
             Assert.AreEqual(user.Username,
                 this.NavigationMap.UsernameLabel.InnerText);

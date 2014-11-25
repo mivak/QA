@@ -1,0 +1,7 @@
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\bin\Debug\TALS.PerformanceTesting.StressTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\bin\Debug\TALS.PerformanceTesting.StressTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\obj\Debug\TALS.PerformanceTesting.StressTest.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\obj\Debug\TALS.PerformanceTesting.StressTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\obj\Debug\TALS.PerformanceTesting.StressTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\bin\Debug\Admin\AllAdminMix120VU.loadtest
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.StressTest\bin\Debug\Front\RegisterUser350VU.loadtest

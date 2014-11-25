@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.TestingFramework.Core", "QA.TestingFramework.Core\QA.TestingFramework.Core.csproj", "{2B6B0AB0-D68B-4660-8574-C89D9F6997ED}"
 EndProject
@@ -10,6 +10,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.TelerikAcademy.Core", "QA.TelerikAcademy.Core\QA.TelerikAcademy.Core.csproj", "{260FD066-5FE9-4BC9-A92F-08AD8BEC2379}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://teamfig.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QA.TestingFramework.Core\\QA.TestingFramework.Core.csproj
+		SccProjectName1 = QA.TestingFramework.Core
+		SccLocalPath1 = QA.TestingFramework.Core
+		SccProjectUniqueName2 = QA.TelerikAcademy.Tests\\QA.TelerikAcademy.Tests.csproj
+		SccProjectName2 = QA.TelerikAcademy.Tests
+		SccLocalPath2 = QA.TelerikAcademy.Tests
+		SccProjectUniqueName3 = QA.TelerikAcademy.Core\\QA.TelerikAcademy.Core.csproj
+		SccProjectName3 = QA.TelerikAcademy.Core
+		SccLocalPath3 = QA.TelerikAcademy.Core
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

@@ -5,6 +5,8 @@
 
     public class RegistrationFormValidator
     {
+        private readonly string pageTitle = "Регистрация за \"Детската академия на Телерик\" в София - Телерик Академия - Студентска система (students system)";
+
         public RegistrationFormPageMap PageMap 
         {
             get
@@ -14,7 +16,7 @@
         }
         public void RegistrationFormPageTitle()
         {
-            Assert.AreEqual("Регистрация за \"Детската академия на Телерик\" в София - Телерик Академия - Студентска система (students system)",
+            Assert.AreEqual(pageTitle,
                 Manager.Current.ActiveBrowser.PageTitle);
         }
     }

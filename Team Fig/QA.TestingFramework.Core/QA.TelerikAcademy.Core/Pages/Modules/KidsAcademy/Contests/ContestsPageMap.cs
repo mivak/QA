@@ -43,5 +43,13 @@
                 return this.Find.ByXPath<HtmlContainerControl>("//*[@id='MainContent']/h1");
             }
         }
+
+        public HtmlAnchor ContestNameColumn
+        {
+            get
+            {
+                return this.Find.ByContent<HtmlAnchor>("Име на състезанието");
+            }
+        }
     }
 }

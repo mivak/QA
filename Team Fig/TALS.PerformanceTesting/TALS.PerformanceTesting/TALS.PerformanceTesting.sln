@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{601F593B-3558-436A-947D-8E244E81CCE1}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.EnduranceTest", "TALS.PerformanceTesting.EnduranceTest\TALS.PerformanceTesting.EnduranceTest.csproj", "{2A88641C-E72E-4A2C-B2B3-7A333FA763F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.StressTest", "TALS.PerformanceTesting.StressTest\TALS.PerformanceTesting.StressTest.csproj", "{055816B1-8BF2-44CF-AE06-11B7743BD05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.SpikeTest", "TALS.PerformanceTesting.SpikeTest\TALS.PerformanceTesting.SpikeTest.csproj", "{00C6D791-8450-496D-8A56-E382EBD200AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.WebTests", "TALS.PerformanceTesting.WebTests\TALS.PerformanceTesting.WebTests.csproj", "{3BAD74A8-3CE6-4A23-A74F-34ACD6439B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.Utils", "TALS.PerformanceTesting.Utils\TALS.PerformanceTesting.Utils.csproj", "{9F50D60D-5BE4-455A-94F7-E5AE4FF8EA1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TALS.PerformanceTesting.LoadTests", "TALS.PerformanceTesting.LoadTests\TALS.PerformanceTesting.LoadTests.csproj", "{F18FE0E8-6D29-4D40-BB79-1C63CCF193FD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://teamfig.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TALS.PerformanceTesting.EnduranceTest\\TALS.PerformanceTesting.EnduranceTest.csproj
+		SccProjectName1 = TALS.PerformanceTesting.EnduranceTest
+		SccLocalPath1 = TALS.PerformanceTesting.EnduranceTest
+		SccProjectUniqueName2 = TALS.PerformanceTesting.StressTest\\TALS.PerformanceTesting.StressTest.csproj
+		SccProjectName2 = TALS.PerformanceTesting.StressTest
+		SccLocalPath2 = TALS.PerformanceTesting.StressTest
+		SccProjectUniqueName3 = TALS.PerformanceTesting.SpikeTest\\TALS.PerformanceTesting.SpikeTest.csproj
+		SccProjectName3 = TALS.PerformanceTesting.SpikeTest
+		SccLocalPath3 = TALS.PerformanceTesting.SpikeTest
+		SccProjectUniqueName4 = TALS.PerformanceTesting.WebTests\\TALS.PerformanceTesting.WebTests.csproj
+		SccProjectName4 = TALS.PerformanceTesting.WebTests
+		SccLocalPath4 = TALS.PerformanceTesting.WebTests
+		SccProjectUniqueName5 = TALS.PerformanceTesting.Utils\\TALS.PerformanceTesting.Utils.csproj
+		SccProjectName5 = TALS.PerformanceTesting.Utils
+		SccLocalPath5 = TALS.PerformanceTesting.Utils
+		SccProjectUniqueName6 = TALS.PerformanceTesting.LoadTests\\TALS.PerformanceTesting.LoadTests.csproj
+		SccProjectName6 = TALS.PerformanceTesting.LoadTests
+		SccLocalPath6 = TALS.PerformanceTesting.LoadTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A88641C-E72E-4A2C-B2B3-7A333FA763F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A88641C-E72E-4A2C-B2B3-7A333FA763F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A88641C-E72E-4A2C-B2B3-7A333FA763F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A88641C-E72E-4A2C-B2B3-7A333FA763F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055816B1-8BF2-44CF-AE06-11B7743BD05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055816B1-8BF2-44CF-AE06-11B7743BD05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055816B1-8BF2-44CF-AE06-11B7743BD05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055816B1-8BF2-44CF-AE06-11B7743BD05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C6D791-8450-496D-8A56-E382EBD200AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C6D791-8450-496D-8A56-E382EBD200AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C6D791-8450-496D-8A56-E382EBD200AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C6D791-8450-496D-8A56-E382EBD200AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAD74A8-3CE6-4A23-A74F-34ACD6439B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAD74A8-3CE6-4A23-A74F-34ACD6439B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAD74A8-3CE6-4A23-A74F-34ACD6439B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAD74A8-3CE6-4A23-A74F-34ACD6439B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F50D60D-5BE4-455A-94F7-E5AE4FF8EA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F50D60D-5BE4-455A-94F7-E5AE4FF8EA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F50D60D-5BE4-455A-94F7-E5AE4FF8EA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F50D60D-5BE4-455A-94F7-E5AE4FF8EA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18FE0E8-6D29-4D40-BB79-1C63CCF193FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18FE0E8-6D29-4D40-BB79-1C63CCF193FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18FE0E8-6D29-4D40-BB79-1C63CCF193FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18FE0E8-6D29-4D40-BB79-1C63CCF193FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

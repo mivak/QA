@@ -8,7 +8,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>("href=http://test.telerikacademy.com/KidsAcademy/AdministrationKidsCandidatesExams/Read?DataGrid-mode=insert");
+                return this.Find.ByExpression<HtmlAnchor>("href=/KidsAcademy/AdministrationKidsCandidatesExams/Read?DataGrid-mode=insert");
             }
         }
 
@@ -16,7 +16,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>("href=http://test.telerikacademy.com/Administration/Navigation");
+                return this.Find.ByExpression<HtmlAnchor>("href=/KidsAcademy/AdministrationKidsCandidatesExams/Read");
             }
         }
 

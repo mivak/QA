@@ -12,13 +12,6 @@ C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.C
 C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
 C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
 C:\TelerikAcademy\QA Part1\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.dll
-C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.pdb
 D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
 D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
 D:\Movie\Video Lessons\QA Academy\SQA Part 2\New folder\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.dll
@@ -47,3 +40,24 @@ C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcadem
 C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
 C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
 C:\TelerikAcademy\QA\Team Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Teamwork-Team-Fig\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.dll
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.pdb
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
+D:\Movie\Video Lessons\QA Academy\Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TelerikAcademy.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\bin\Debug\QA.TestingFramework.Core.pdb
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.csprojResolveAssemblyReference.cache
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.dll
+C:\Users\Master\Google Drive\Telerik Academy\13. Quality-Assurance\04. Team Fig\QA.TestingFramework.Core\QA.TelerikAcademy.Core\obj\Debug\QA.TelerikAcademy.Core.pdb

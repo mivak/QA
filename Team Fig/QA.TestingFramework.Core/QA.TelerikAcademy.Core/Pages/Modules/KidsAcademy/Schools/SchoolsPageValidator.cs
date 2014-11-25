@@ -5,6 +5,9 @@
 
     public class SchoolsPageValidator
     {
+        private readonly string pageHeader = "Администрация на детската академия на Телерик";
+        private readonly string courseInstanceRequiredMessage = "Моля въведете името на курсовата инстанция";
+
         public SchoolsPageMap PageMap
         {
             get
@@ -23,14 +26,13 @@
 
         public void AdminPageHeader()
         {
-            Assert.AreEqual(
-                "Администрация на детската академия на Телерик",
+            Assert.AreEqual(pageHeader,
                 this.PageMap.AdminPageHeader.InnerText);
         }
 
         public void CoursePageHeader(string name)
         {
-            Assert.AreEqual("Курс \"" + name + "\"", 
+            Assert.AreEqual(name, 
                 this.PageMap.CourseHeaderName.InnerText);
         }
 
@@ -44,8 +46,7 @@
         {
             Assert.IsTrue(this.EditPageMap
                 .EmptyNameValidationMessage.IsVisible());
-            Assert.AreEqual(
-                "Моля въведете името на курсовата инстанция",
+            Assert.AreEqual(courseInstanceRequiredMessage,
                 this.EditPageMap
                 .EmptyNameValidationMessage.InnerText);
         }

@@ -20,6 +20,14 @@
             }
         }
 
+        public HtmlSpan TrainingRoomDropdownArrow
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>("/html/body/div[10]/div[2]/div/form/fieldset/div[8]/span[1]/span/span[2]/span");
+            }
+        }
+
         public HtmlAnchor ExportToExcelButton
         {
             get
@@ -41,6 +49,14 @@
             get
             {
                 return this.Find.ByXPath<HtmlTable>("//*[@id='DataGrid']/table");
+            }
+        }
+
+        public HtmlUnorderedList CoursesList
+        {
+            get
+            {
+                return this.Find.ById<HtmlUnorderedList>("CourseInstanceId_listbox");
             }
         }
 

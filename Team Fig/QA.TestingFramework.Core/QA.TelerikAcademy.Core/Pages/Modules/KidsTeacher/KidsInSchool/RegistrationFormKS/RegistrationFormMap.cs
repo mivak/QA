@@ -1,6 +1,7 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsTeacher.KidsInSchool.RegistrationFormKS
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
+
     public class RegistrationFormMap : BaseElementMap
     {
         public HtmlInputText Username

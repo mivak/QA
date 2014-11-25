@@ -237,5 +237,32 @@
                     "//*[@id='MainContent']/form/fieldset[1]/div[2]/span/span");
             }
         }
+
+        public HtmlSpan PasswordLengthValidationMessage
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>(
+                    "//*[@id='MainContent']/form/fieldset[1]/div[4]/span/span");
+            }
+        }
+
+        public HtmlSpan EmailValidationMessage
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>(
+                    "//*[@id='MainContent']/form/fieldset[1]/div[8]/span/span");
+            }
+        }
+
+        public HtmlSpan FirstNameBgValidationMessage
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>(
+                    "//*[@id='MainContent']/form/fieldset[1]/div[10]/span/span");
+            }
+        }
     }
 }

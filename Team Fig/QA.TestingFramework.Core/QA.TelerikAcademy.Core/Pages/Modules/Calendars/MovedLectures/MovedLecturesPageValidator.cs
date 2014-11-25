@@ -2,6 +2,8 @@
 {
     using ArtOfTest.Common.UnitTesting;
     using ArtOfTest.WebAii.Core;
+    using System;
+    using System.Threading;
 
     public class MovedLecturesPageValidator
     {
@@ -16,19 +18,20 @@
         public void VerifyPosponeLectureForAllCourses()
         {
             var rowsInGrid = this.Map.Grid.BodyRows.Count;
-            Assert.AreEqual(1, rowsInGrid);
             Assert.AreEqual("За всички курсове", this.Map.Grid.BodyRows[0].Cells[2].InnerText);
         }
 
         public void VerifyLectureIsMovedToNewTrainingRoom()
         {
-            Assert.AreEqual("Ultimate", this.Map.NewTrainingRoom.SelectedOption.Text);
+            var trainingRoom = this.Map.Grid.Rows[0].Cells[3].InnerText;
+            Assert.AreEqual("Ultimate", trainingRoom);
         }
 
         public void VerifyLectureToSpecificCourseIsMoved()
         {
             Manager.Current.ActiveBrowser.RefreshDomTree();
-            Assert.AreEqual("Човъркане в Студентската Система", this.Map.Grid.BodyRows[0].Cells[2].InnerText);
+            this.Map.Grid.Wait.ForExists(5000);
+            Assert.AreEqual("TEST", this.Map.Grid.BodyRows[0].Cells[2].InnerText);
         }
 
         public void VerifyNewStartTimeOfExistingMovedLecture()

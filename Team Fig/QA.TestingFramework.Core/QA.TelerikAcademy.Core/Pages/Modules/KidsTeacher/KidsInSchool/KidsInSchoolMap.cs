@@ -1,7 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsTeacher.KidsInSchool
 {
     using ArtOfTest.WebAii.Controls.HtmlControls;
-using QA.TelerikAcademy.Core.Pages.Modules.KidsTeacher.KidsInSchool.RegistrationFormKS;
 
     public class KidsInSchoolMap : BaseElementMap
     {

@@ -16,6 +16,10 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,14 +65,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Base\MainNavigationMap.cs" />
-    <Compile Include="Base\NavigationMap.cs" />
-    <Compile Include="Data\User.cs" />
-    <Compile Include="Data\UserRoles.cs" />
+    <Compile Include="Data\RandomDataProvider\RandomDateTimeProvider.cs" />
+    <Compile Include="Data\RandomDataProvider\RandomStringProvider.cs" />
+    <Compile Include="Pages\MainNavigation\MainNavigationMap.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\EntryTests\EntryTestEditPageMap.cs" />
+    <Compile Include="Pages\Navigation\NavigationMap.cs" />
+    <Compile Include="Data\Users\IUser.cs" />
+    <Compile Include="Data\Users\User.cs" />
+    <Compile Include="Data\Users\UserFactory.cs" />
+    <Compile Include="Data\Users\UserRoles.cs" />
     <Compile Include="Pages\AdminPage\AdminPage.cs" />
     <Compile Include="Pages\AdminPage\AdminPageMap.cs" />
     <Compile Include="Pages\AdminPage\AdminPageValidator.cs" />
-    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\Base\BasePage.cs" />
+    <Compile Include="Pages\Base\IPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPage.cs" />
     <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
     <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
@@ -86,16 +96,17 @@
     <Compile Include="Pages\Modules\Calendars\OfficialHolidays\OfficialHolidaysPageValidator.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Candidates\CandidatesPage.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Candidates\CandidatesPageMap.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Candidates\CandidatesPageValidater.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Candidates\CandidatesPageValidator.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Contests\ContestsPage.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Contests\ContestsPageMap.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Contests\ContestsPageValidator.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContestForm\AddUserToContestForm.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContestForm\AddUserToContestFormMap.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContestForm\AddUserToContestFormValidator.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreationForm\ContestCreationForm.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreationForm\ContestCreationFormMap.cs" />
-    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreationForm\ContestCreationFormValidator.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContest\AddUserToContestForm.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContest\AddUserToContestFormMap.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\AddUserToContest\AddUserToContestFormValidator.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreation\ContestCreationForm.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreation\ContestCreationFormMap.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\Forms\ContestCreation\ContestCreationFormValidator.cs" />
+    <Compile Include="Pages\Modules\KidsAcademy\Contests\UserContestEntry.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Documents\DocumentsPage.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Documents\DocumentsPageMap.cs" />
     <Compile Include="Pages\Modules\KidsAcademy\Documents\DocumentsPageValidator.cs" />
@@ -125,7 +136,9 @@
     <Compile Include="Pages\Modules\KidsTeacher\KidsInSchool\RegistrationFormKS\RegistrationFormMap.cs" />
     <Compile Include="Pages\Modules\KidsTeacher\KidsInSchool\RegistrationFormKS\RegistrationFormPage.cs" />
     <Compile Include="Pages\Modules\KidsTeacher\KidsInSchool\RegistrationFormKS\RegistrationFormValidator.cs" />
+    <Compile Include="Providers\PageProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\NavigationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QA.TestingFramework.Core\QA.TestingFramework.Core.csproj">
@@ -133,7 +146,9 @@
       <Name>QA.TestingFramework.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Service References\" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

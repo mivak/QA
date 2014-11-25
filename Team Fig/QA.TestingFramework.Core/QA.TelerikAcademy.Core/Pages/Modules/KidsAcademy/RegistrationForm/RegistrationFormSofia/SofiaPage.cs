@@ -2,23 +2,15 @@
 {
     using System;
     using ArtOfTest.WebAii.Core;
-    using System.Text;
+    using QA.TelerikAcademy.Core.Data.RandomDataProvider;
+    using QA.TelerikAcademy.Core.Pages.Base;
 
     public class SofiaPage : BasePage
     {
-        private const string RegistrationFormUrl =
-            "http://test.telerikacademy.com/KidsAcademy/Registration/1/Sofia";
-
-        private const string EnglishLetters =
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-        private const string BulgarianLetters =
-            "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯабвгдежзийклмнопрстуфхцчшщъьюя";
-
-        private readonly Random random = new Random();
+        private readonly string xss = "<script>alert('Hello')<script>";
 
         public SofiaPage()
-            : base(RegistrationFormUrl)
+            : base("http://test.telerikacademy.com/KidsAcademy/Registration/1/Sofia")
         {
         }
 
@@ -38,86 +30,10 @@
             }
         }
 
-        public void GoToSofiaPage()
-        {
-            this.Navigate();
-        }
-
-        public string GetRandomEnglishString(int size)
-        {
-            StringBuilder text = new StringBuilder(size);
-
-            for (int i = 0; i < size; i++)
-            {
-                text.Append(EnglishLetters[random.Next(EnglishLetters.Length)]);
-            }
-
-            return text.ToString();
-        }
-
-        public string GetRandomBulgarianString(int size)
-        {
-            StringBuilder text = new StringBuilder(size);
-
-            for (int i = 0; i < size; i++)
-            {
-                text.Append(BulgarianLetters[random.Next(BulgarianLetters.Length)]);
-            }
-
-            return text.ToString();
-        }
-
-        public string GetRandomDate()
-        {
-            int year = random.Next(1997, 2010);
-            int month = random.Next(1, 12);
-            int day = random.Next(1, 31);
-
-            StringBuilder date = new StringBuilder();
-            if (day < 10)
-            {
-                date.Append("0");
-            }
-
-            date.Append(day.ToString());
-            date.Append("/");
-
-            if (month < 10)
-            {
-                date.Append("0");
-            }
-
-            date.Append(month.ToString());
-            date.Append("/");
-            date.Append(year.ToString());
-
-            return date.ToString();
-        }
-
-        public string GetRandomEmail()
-        {
-            StringBuilder email = new StringBuilder();
-            email.Append(this.GetRandomEnglishString(5));
-            email.Append("@");
-            email.Append(this.GetRandomEnglishString(4));
-            email.Append(".");
-            email.Append(this.GetRandomEnglishString(3));
-
-            return email.ToString();
-        }
-
-        public string GetRandomPhoneNumber()
-        {
-            string phoneNumber = "0888" +
-                this.random.Next(100000, 999999).ToString();
-
-            return phoneNumber;
-        }
-
         public void RegisterValidUser(string username)
         {
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -131,8 +47,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -145,7 +61,7 @@
 
         public void RegisterEmptyPasswordUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             this.EnterUsername(username);
             this.EnterEmail();
             this.EnterFirstNameBg();
@@ -157,9 +73,8 @@
 
             this.EnterSchoolName();
             this.EnterClass();
-            this.EnterCity();
-
             this.EnterAdditionalInformation();
+            this.EnterCity();
 
             this.EnterParentFirstNameBg();
             this.EnterParentLastNameBg();
@@ -172,9 +87,9 @@
 
         public void RegisterPasswordNotMatchUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password + "1");
 
@@ -188,8 +103,37 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
+
+            EnterParentFirstNameBg();
+            EnterParentLastNameBg();
+            EnterParentEmail();
+            EnterParentPhone();
+
+            this.PageMap.TermsAndConditions.Click();
+            this.PageMap.RegistrationButton.Click();
+        }
+
+        public void RegisterEmptyPasswordAgainUser()
+        {
+            string username = RandomStringProvider.GetRandomStringLatin(6);
+            EnterUsername(username);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
+            EnterPassword(password);
+
+            EnterEmail();
+            EnterFirstNameBg();
+            EnterDateOfBirth();
+            EnterLastNameBg();
+
+            this.PageMap.GenderFemale.MouseClick();
+
+            EnterPhone();
+            EnterSchoolName();
+            EnterClass();
+            EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -202,9 +146,9 @@
 
         public void RegisterEmptyEmailUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -217,8 +161,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -231,9 +175,9 @@
 
         public void RegisterEmptyFirstNameBgUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -246,8 +190,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -260,9 +204,9 @@
 
         public void RegisterEmptyLastNameBgUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -275,8 +219,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -289,9 +233,9 @@
 
         public void RegisterEmptyDateOfBirthUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -304,8 +248,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -318,9 +262,9 @@
 
         public void RegisterEmptyGenderUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -332,8 +276,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -346,9 +290,9 @@
 
         public void RegisterEmptyClassUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -361,8 +305,8 @@
 
             EnterPhone();
             EnterSchoolName();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -375,9 +319,9 @@
 
         public void RegisterEmptyParentFirstNameBgUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -391,8 +335,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentLastNameBg();
             EnterParentEmail();
@@ -404,9 +348,9 @@
 
         public void RegisterEmptyParentLastNameBgUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -420,8 +364,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentEmail();
@@ -433,9 +377,9 @@
 
         public void RegisterEmptyParentEmailUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -449,8 +393,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -462,9 +406,9 @@
 
         public void RegisterEmptyParentPhoneUser()
         {
-            string username = this.GetRandomEnglishString(6);
+            string username = RandomStringProvider.GetRandomStringLatin(6);
             EnterUsername(username);
-            string password = this.GetRandomEnglishString(6);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
             EnterPassword(password);
             EnterPasswordAgain(password);
 
@@ -478,8 +422,8 @@
             EnterPhone();
             EnterSchoolName();
             EnterClass();
-            EnterCity();
             EnterAdditionalInformation();
+            EnterCity();
 
             EnterParentFirstNameBg();
             EnterParentLastNameBg();
@@ -491,56 +435,167 @@
 
         public void EnterShorterUsername()
         {
-            this.EnterUsername("asdf");
+            this.EnterUsername(RandomStringProvider.GetRandomStringLatin(4));
             this.PageMap.Password.MouseClick();
         }
 
-        // 33 letters
         public void EnterLongerUsername()
         {
-            this.EnterUsername("asdfasdfasdfasdfasdfasdfasdfasdfa");
+            this.EnterUsername(RandomStringProvider.GetRandomStringLatin(33));
             this.PageMap.Password.MouseClick();
         }
 
         public void EnterInvalidUsername()
         {
-            this.EnterUsername("-asdf");
+            this.EnterUsername("-" + RandomStringProvider.GetRandomStringLatin(4));
             this.PageMap.Password.MouseClick();
+        }
+
+        public void EnterShorterPassword()
+        {
+            this.EnterUsername(RandomStringProvider.GetRandomStringLatin(6));
+            this.EnterPassword(RandomStringProvider.GetRandomStringLatin(5));
+            this.PageMap.PasswordAgain.MouseClick();
+        }
+
+        public void EnterLongerEmail()
+        {
+            string password = RandomStringProvider.GetRandomStringLatin(7);
+            this.EnterUsername(RandomStringProvider.GetRandomStringLatin(6));
+            this.EnterPassword(password);
+            this.EnterPasswordAgain(password);
+            this.PageMap.Email.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(
+                RandomStringProvider.GetRandomStringLatin(45) +
+                RandomStringProvider.GetRandomEmail());
+            this.PageMap.FirstNameBg.MouseClick();
+        }
+
+        public void EnterInvalidEmail()
+        {
+            this.PageMap.Email.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(
+                RandomStringProvider.GetRandomStringLatin(5));
+            this.PageMap.FirstNameBg.MouseClick();
+        }
+
+        public void EnterInvalidSymbolsInFirstNameBg()
+        {
+            this.PageMap.FirstNameBg.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(
+                RandomStringProvider.GetRandomStringLatin(5));
+            this.PageMap.LastNameBg.MouseClick();
+        }
+
+        public void EnterShorterFirstNameBg()
+        {
+            this.PageMap.FirstNameBg.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(
+                RandomStringProvider.GetRandomStringCyrillic(1));
+            this.PageMap.LastNameBg.MouseClick();
+        }
+
+        public void EnterLongerFirstNameBg()
+        {
+            this.PageMap.FirstNameBg.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(
+                RandomStringProvider.GetRandomStringCyrillic(31));
+            this.PageMap.LastNameBg.MouseClick();
+        }
+
+        public void RegisterUserWithXssPassword(string username)
+        {
+            EnterUsername(username);
+            string password = xss;
+            EnterPassword(password);
+            EnterPasswordAgain(password);
+
+            EnterEmail();
+            EnterFirstNameBg();
+            EnterDateOfBirth();
+            EnterLastNameBg();
+
+            this.PageMap.GenderFemale.MouseClick();
+
+            EnterPhone();
+            EnterSchoolName();
+            EnterClass();
+            EnterAdditionalInformation();
+            EnterCity();
+
+            EnterParentFirstNameBg();
+            EnterParentLastNameBg();
+            EnterParentEmail();
+            EnterParentPhone();
+
+            this.PageMap.TermsAndConditions.Click();
+            this.PageMap.RegistrationButton.Click();
+        }
+
+        public void RegisterUserWithXssAdditionlInfo(string username)
+        {
+            EnterUsername(username);
+            string password = RandomStringProvider.GetRandomStringLatin(6);
+            EnterPassword(password);
+            EnterPasswordAgain(password);
+
+            EnterEmail();
+            EnterFirstNameBg();
+            EnterDateOfBirth();
+            EnterLastNameBg();
+
+            this.PageMap.GenderFemale.MouseClick();
+
+            EnterPhone();
+            EnterSchoolName();
+            EnterClass();
+
+            this.PageMap.AdditionalInfo.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText(xss);
+            EnterCity();
+
+            EnterParentFirstNameBg();
+            EnterParentLastNameBg();
+            EnterParentEmail();
+            EnterParentPhone();
+
+            this.PageMap.TermsAndConditions.Click();
+            this.PageMap.RegistrationButton.Click();
         }
 
         private void EnterParentPhone()
         {
             this.PageMap.ParentPhone.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomPhoneNumber());
+                RandomStringProvider.GetRandomPhoneNumber());
         }
 
         private void EnterParentEmail()
         {
             this.PageMap.ParentEmail.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomEmail());
+                RandomStringProvider.GetRandomEmail());
         }
 
         private void EnterParentLastNameBg()
         {
             this.PageMap.ParentLastNameBg.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomBulgarianString(9));
+                RandomStringProvider.GetRandomStringCyrillic(9));
         }
 
         private void EnterParentFirstNameBg()
         {
             this.PageMap.ParentFirstNameBg.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomBulgarianString(7));
+                RandomStringProvider.GetRandomStringCyrillic(7));
         }
 
         private void EnterAdditionalInformation()
         {
             this.PageMap.AdditionalInfo.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomEnglishString(20));
+                RandomStringProvider.GetRandomStringLatin(20));
         }
 
         private void EnterCity()
@@ -562,42 +617,42 @@
         {
             this.PageMap.SchoolName.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomEnglishString(10));
+                RandomStringProvider.GetRandomStringLatin(10));
         }
 
         private void EnterPhone()
         {
             this.PageMap.Phone.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomPhoneNumber());
+                RandomStringProvider.GetRandomPhoneNumber());
         }
 
         private void EnterLastNameBg()
         {
             this.PageMap.LastNameBg.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomBulgarianString(8));
+                RandomStringProvider.GetRandomStringCyrillic(8));
         }
 
         private void EnterDateOfBirth()
         {
             this.PageMap.DateOfBirth.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomDate());
+                RandomStringProvider.GetRandomDate("01/01/2007"));
         }
 
         private void EnterFirstNameBg()
         {
             this.PageMap.FirstNameBg.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomBulgarianString(6));
+                RandomStringProvider.GetRandomStringCyrillic(6));
         }
 
         private void EnterEmail()
         {
             this.PageMap.Email.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(
-                this.GetRandomEmail());
+                RandomStringProvider.GetRandomEmail());
         }
 
         private void EnterPasswordAgain(string password)

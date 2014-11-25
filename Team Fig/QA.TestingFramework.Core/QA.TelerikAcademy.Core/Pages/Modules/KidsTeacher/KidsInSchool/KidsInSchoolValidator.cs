@@ -1,12 +1,9 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsTeacher.KidsInSchool
 {
+    using System;
+    using System.Linq;
     using ArtOfTest.Common.UnitTesting;
     using ArtOfTest.WebAii.Controls.HtmlControls;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class KidsInSchoolValidator
     {

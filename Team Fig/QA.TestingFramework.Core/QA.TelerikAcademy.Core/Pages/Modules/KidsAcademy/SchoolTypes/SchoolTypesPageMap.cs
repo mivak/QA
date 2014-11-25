@@ -126,5 +126,14 @@
                     "//*[@id='DataGrid']/table/tbody/tr[2]/td[4]/a");
             }
         }
+
+        public HtmlDiv CreateWindowDivContainer
+        {
+            get
+            {
+                return this.Find.ByExpression<HtmlDiv>(
+                    "class=k-edit-form-container");
+            }
+        }
     }
 }

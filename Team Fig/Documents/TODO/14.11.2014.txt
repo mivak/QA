@@ -1,0 +1,8 @@
+#1: Add Load Test with Scenario Mix: -> OK
+	- Admin users - 1%
+	- Users - 99%
+#2: Add errors to metrics -> OK
+#3: Add error criteria -> OK
+#4: Increase test duration (5 -> 10 min) -> OK
+#5: Add Pass/Fail criteria to report graphs
+#6: Add more browsers to browser mix

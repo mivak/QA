@@ -8,7 +8,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>("href=http://test.telerikacademy.com/KidsAcademy/AdministrationKidsSchoolsDocuments/KidsSchoolDocumentCreate");
+                return this.Find.ByContent<HtmlAnchor>("Добавяне на файл");
             }
         }
         
@@ -24,7 +24,7 @@
         {
             get
             {
-                return this.Find.ByExpression<HtmlAnchor>("href=http://test.telerikacademy.com/Administration/Navigation");
+                return this.Find.ByContent<HtmlAnchor>("Обратно към администрацията");
             }
         }
 
@@ -32,7 +32,40 @@
         {
             get
             {
-                return this.Find.ByAttributes<HtmlTable>("role=grid");
+                return this.Find.ByXPath<HtmlTable>("//*[@id='DataGrid']/table");
+            }
+        }
+
+        public HtmlInputSubmit AddAttachedFile
+        {
+            get
+            {
+                return this.Find.ByExpression<HtmlInputSubmit>("value=Добавяне");
+            }
+        }
+
+        public HtmlContainerControl AdminPageHeader
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlContainerControl>(
+                    "//*[@id='MainContent']/h1");
+            }
+        }
+
+        public HtmlSpan EmptyNameErrorMessage
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>("//*[@id='MainContent']/form/fieldset/div[6]/span/span");
+            }
+        }
+
+        public HtmlSpan KidsSchoolDropdown
+        {
+            get
+            {
+                return this.Find.ByXPath<HtmlSpan>("//*[@id='MainContent']/form/fieldset/div[2]/span[1]");
             }
         }
     }

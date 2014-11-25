@@ -19,16 +19,16 @@
             get
             {
                 return this.Find.ByXPath<HtmlDiv>(
-                    "/html/body/div[12]/div[2]/div/div[6]");
+                    "/html/body/div[11]/div[2]/div/div[6]");
             }
         }
 
-        public HtmlSpan CategoryLabel
+        public HtmlContainerControl CategoryLabel
         {
             get
             {
-                return this.Find.ByXPath<HtmlSpan>(
-                    "/html/body/div[12]/div[2]/div/div[6]/span[1]/span/span[2]/span");
+                return this.Find.ByContent<HtmlContainerControl>(
+                    "Категория");
             }
         }
 
@@ -127,7 +127,7 @@
             get
             {
                 return this.Find.ByExpression<HtmlDiv>(
-                    "/html/body/div[12]/div[2]/div/div[24]".XPath());
+                    "/html/body/div[11]/div[2]/div/div[24]".XPath());
             }
         }
 

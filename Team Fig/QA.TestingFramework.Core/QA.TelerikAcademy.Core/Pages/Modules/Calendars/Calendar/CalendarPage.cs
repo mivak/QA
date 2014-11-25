@@ -1,15 +1,14 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.Calendar
 {
+    using QA.TelerikAcademy.Core.Pages.Base;
     public class CalendarPage : BasePage
     {
-        private const string CalendarPageUrl = "http://test.telerikacademy.com/Administration_Calendar/Calendar";
-
         public CalendarPage()
-            : base(CalendarPageUrl)
+            : base("http://test.telerikacademy.com/Administration_Calendar/Calendar")
         {
         }
 
-        public CalendarPageMap Map
+        public CalendarPageMap PageMap
         {
             get
             {
@@ -24,5 +23,7 @@
                 return new CalendarPageValidator();
             }
         }
+
+
     }
 }

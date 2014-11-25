@@ -16,7 +16,7 @@
         }
 
         [ClassInitialize]
-        public void CoreClassInit()
+        public static void CoreClassInit()
         {
         }
 
@@ -61,8 +61,8 @@
 
             Manager.Current.LaunchNewBrowser();
             Manager.Current.ActiveBrowser.Refresh();
-            Manager.Current.ActiveBrowser.ClearCache(
-            BrowserCacheType.Cookies);
+            Manager.Current.ActiveBrowser.ClearCache(BrowserCacheType.Cookies);
+            Manager.Current.ActiveBrowser.Window.Maximize();
         }
 
         public void DisposeBrowser()

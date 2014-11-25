@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.ContestCreation
+﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms
 {
     using System;
     using System.Collections.Generic;

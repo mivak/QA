@@ -1,0 +1,11 @@
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\Modules\Calendars\Calendar\FrontCalendar.webtest
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\TALS.PerformanceTesting.Utils.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\TALS.PerformanceTesting.Utils.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\obj\Debug\TALS.PerformanceTesting.WebTests.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\obj\Debug\TALS.PerformanceTesting.WebTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\obj\Debug\TALS.PerformanceTesting.WebTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\TALS.PerformanceTesting.WebTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\TALS.PerformanceTesting.WebTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\Modules\KidsAcademy\Candidates\ViewCandidates.webtest
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\Modules\KidsAcademy\Documents\DownloadAll.webtest
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.WebTests\bin\Debug\Modules\Calendars\OfficialHolidays\ViewOfficialHolidays.webtest

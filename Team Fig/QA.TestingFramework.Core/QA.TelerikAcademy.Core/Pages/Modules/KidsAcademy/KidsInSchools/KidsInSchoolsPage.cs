@@ -1,11 +1,11 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.KidsInSchools
 {
+    using QA.TelerikAcademy.Core.Pages.Base;
+    
     public class KidsInSchoolsPage : BasePage
     {
-         private const string KidsInSchoolsPageUrl = "http://test.telerikacademy.com/KidsAcademy/AdministrationUsersInKidsSchools";
-
          public KidsInSchoolsPage()
-             : base(KidsInSchoolsPageUrl)
+            : base("http://test.telerikacademy.com/KidsAcademy/AdministrationUsersInKidsSchools")
         {
         }
 

@@ -1,0 +1,6 @@
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\bin\Debug\TALS.PerformanceTesting.SpikeTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\bin\Debug\TALS.PerformanceTesting.SpikeTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\obj\Debug\TALS.PerformanceTesting.SpikeTest.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\obj\Debug\TALS.PerformanceTesting.SpikeTest.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\obj\Debug\TALS.PerformanceTesting.SpikeTest.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.SpikeTest\bin\Debug\RegisterUser300VU.loadtest

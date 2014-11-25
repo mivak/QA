@@ -1,10 +1,8 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms.AddUserToContest
 {
-    using ArtOfTest.WebAii.Core;
-    using System.Threading;
-    using System.Drawing;
     using System;
-    using ArtOfTest.WebAii.Controls.HtmlControls;
+    using System.Threading;
+    using ArtOfTest.WebAii.Core;
 
     public class AddUserToContestForm
     {
@@ -97,4 +95,3 @@
         }
     }
 }
-

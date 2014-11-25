@@ -1,13 +1,13 @@
-﻿using ArtOfTest.WebAii.Core;
-using ArtOfTest.WebAii.Win32.Dialogs;
-namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.MovedLectures
+﻿namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.MovedLectures
 {
+    using ArtOfTest.WebAii.Core;
+    using ArtOfTest.WebAii.Win32.Dialogs;
+    using QA.TelerikAcademy.Core.Pages.Base;
+
     public class MovedLecturesPage : BasePage
     {
-        private const string MovedLecturesPageUrl = "http://test.telerikacademy.com/Administration_Calendar/MovedLectures";
-
         public MovedLecturesPage()
-            : base(MovedLecturesPageUrl)
+            : base("http://test.telerikacademy.com/Administration_Calendar/MovedLectures")
         {
         }
 
@@ -26,12 +26,7 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.MovedLectures
                 return new MovedLecturesPageValidator();
             }
         }
-
-        public void GoToMovedLecturesModule()
-        {
-            this.Navigate();
-        }
-
+        
         public void MoveLectureForAllCourses()
         {
             Manager.Current.ActiveBrowser.WaitForElement(3000, "xpath=//*[@id='DataGrid']/div[1]/a[2]");
@@ -41,9 +36,12 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.MovedLectures
 
         public void MoveLectureToAnotherTrainingRoom()
         {
-            Manager.Current.ActiveBrowser.WaitForElement(3000, "xpath=//*[@id='DataGrid']/div[1]/a[2]");
             this.Map.MovePostponeLectureButton.Click();
-            this.Map.NewTrainingRoom.SelectByText("Ultimate");
+
+            this.Map.TrainingRoomDropdownArrow.MouseClick();
+            Manager.Current.Desktop.KeyBoard.TypeText("Ultimate", 5);
+            Manager.Current.Desktop.KeyBoard.KeyPress(System.Windows.Forms.Keys.Enter);
+
             this.Map.UpdateButton.Click();
         }
 
@@ -51,8 +49,8 @@ namespace QA.TelerikAcademy.Core.Pages.Modules.Calendars.MovedLectures
         {
             this.Map.ModifyButton.Click();
             this.Map.CourseInputField.MouseClick();
-            Manager.Current.Desktop.KeyBoard.TypeText("Човъркане в Студентската Система", 5);
-            this.Map.UpdateButton.Click();
+            Manager.Current.Desktop.KeyBoard.TypeText("TEST", 5);
+            this.Map.UpdateButton.MouseClick();
         }
 
         public void SetNewStartTimeOfExistingMovedLecture()

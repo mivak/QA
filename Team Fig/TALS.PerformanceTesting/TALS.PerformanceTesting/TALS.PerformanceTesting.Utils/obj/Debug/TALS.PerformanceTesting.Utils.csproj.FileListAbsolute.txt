@@ -1,0 +1,5 @@
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.Utils\bin\Debug\TALS.PerformanceTesting.Utils.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.Utils\bin\Debug\TALS.PerformanceTesting.Utils.pdb
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.Utils\obj\Debug\TALS.PerformanceTesting.Utils.csprojResolveAssemblyReference.cache
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.Utils\obj\Debug\TALS.PerformanceTesting.Utils.dll
+C:\TelerikAcademy\QA\Team Fig\Team Fig\TALS.PerformanceTesting\TALS.PerformanceTesting\TALS.PerformanceTesting.Utils\obj\Debug\TALS.PerformanceTesting.Utils.pdb

@@ -1,13 +1,13 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.LoginPage
 {
-    using QA.TelerikAcademy.Core.Base;
-    using QA.TelerikAcademy.Core.Data;
+    using QA.TelerikAcademy.Core.Data.Users;
+    using QA.TelerikAcademy.Core.Pages.Base;
+    using QA.TelerikAcademy.Core.Pages.Navigation;
 
     public class LoginPage : BasePage
     {
-        private const string LoginPageUrl = "http://test.telerikacademy.com/Users/Auth/Login";
         public LoginPage()
-            :base(LoginPageUrl)
+            :base("http://test.telerikacademy.com/Users/Auth/Login")
         {
         }
 
@@ -35,7 +35,7 @@
             }
         }
 
-        public void LoginUser(User user)
+        public void LoginUser(IUser user)
         {
             this.Navigate();
             this.Map.Email.Text = user.Email;

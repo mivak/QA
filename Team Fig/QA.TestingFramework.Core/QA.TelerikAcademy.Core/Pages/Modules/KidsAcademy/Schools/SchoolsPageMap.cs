@@ -27,7 +27,7 @@
             get
             {
                 return this.Find.ByXPath<HtmlAnchor>(
-                    "//*[@id='DataGrid']/table/tbody/tr[1]/td[1]/a");
+                    "//*[@id='DataGrid']/table/tbody/tr[3]/td[1]");
             }
         }
 
@@ -36,7 +36,7 @@
             get
             {
                 return this.Find.ByXPath<HtmlAnchor>(
-                    "//*[@id='KidsSchool_9']/table/tbody/tr/td[2]/a");
+                    "//*[@id='KidsSchool_8']/table/tbody/tr/td[2]/a");
             }
         }
 
@@ -55,7 +55,7 @@
             {
                 return this.Find.ByXPath<HtmlTable>(
                     "//*[@id='KidsSchool_" +
-                    this.Grid.Rows[0].Cells[2].InnerText +
+                    this.Grid.Rows[1].Cells[2].InnerText +
                 "']/table");
             }
         }
@@ -65,7 +65,7 @@
             get
             {
                 return this.Find.ByXPath<HtmlContainerControl>(
-                    "//*[@id='MainContent']/h1");
+                    "//*[@id='MainContent']/article/h2/a");
             }
         }
 
@@ -75,7 +75,7 @@
             {
                 return this.Find.ByXPath<HtmlAnchor>(
                     "//*[@id='KidsSchool_" +
-                    this.Grid.Rows[0].Cells[2].InnerText +
+                    this.Grid.Rows[1].Cells[2].InnerText +
                     "']/table/tbody/tr/td[10]/a");
             }
         }

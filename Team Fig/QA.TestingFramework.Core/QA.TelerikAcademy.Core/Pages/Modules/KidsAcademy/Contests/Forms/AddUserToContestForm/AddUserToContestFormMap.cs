@@ -1,4 +1,4 @@
-﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms.AddUserToContest
+﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms.AddUserToContestForm
 {
     using System;
     using System.Collections.Generic;

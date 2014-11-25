@@ -1,13 +1,6 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.Modules.KidsTeacher.KidsInSchool.RegistrationFormKS
 {
-    using ArtOfTest.WebAii.Controls.HtmlControls;
     using ArtOfTest.WebAii.Core;
-    using ArtOfTest.WebAii.Win32.Dialogs;
-    using QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.ContestCreation;
-    using QA.TelerikAcademy.Core.Pages.Modules.KidsAcademy.Contests.Forms.AddUserToContest;
-    using System.Threading;
-    using System.Drawing;
-    using QA.TelerikAcademy.Core.Base;
 
     public class RegistrationFormPage
     {
@@ -29,7 +22,11 @@
 
         public void RegisterNewUser(RegistrationEntry userProfile)
         {
-            this.Map.Username.Click();
+            Manager.Current.ActiveBrowser.WaitForAjax(5000);
+
+            Manager.Current.ActiveBrowser.RefreshDomTree();
+
+            this.Map.Username.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(userProfile.Username);
 
             this.Map.Email.MouseClick();
@@ -47,7 +44,7 @@
             this.Map.ParentPhone.MouseClick();
             Manager.Current.Desktop.KeyBoard.TypeText(userProfile.ParentPhone);
 
-            this.Map.AddUserButton.MouseClick();
+            this.Map.AddUserButton.Click();
         }
     }
 }

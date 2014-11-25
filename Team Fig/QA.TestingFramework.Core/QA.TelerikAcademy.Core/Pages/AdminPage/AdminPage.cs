@@ -1,14 +1,12 @@
 ﻿namespace QA.TelerikAcademy.Core.Pages.AdminPage
 {
-    using QA.TelerikAcademy.Core.Base;
+    using QA.TelerikAcademy.Core.Pages.Base;
+    using QA.TelerikAcademy.Core.Pages.MainNavigation;
 
     public class AdminPage : BasePage
     {
-        private const string AdminPageUrl = 
-            "http://test.telerikacademy.com/Administration/Navigation";
-        
         public AdminPage()
-            : base(AdminPageUrl)
+            : base("http://test.telerikacademy.com/Administration/Navigation")
         {
         }
 
