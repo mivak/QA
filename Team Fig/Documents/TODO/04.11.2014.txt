@@ -1,2 +1,0 @@
-* UserFactory, IUser, User in Data folder - WHERE? In which project?
-* PageProvider with Singleton - WHERE? In which project? What name?

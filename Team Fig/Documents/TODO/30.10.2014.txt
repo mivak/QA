@@ -1,7 +1,0 @@
-﻿* Unit test attributes - owner, TestCategory, KnownIssue attribite (bug Id), Priority - OK
-* User class to be renamed UserFactory - OK
-* Pages to be singleton - OK
-* Test plan - metrics and reports - number of test cases per module and per priority - OK
-* Test plan - add bug priority classification - OK
-* Add current build to weekly report - OK
-* Add class Random generator - OK
